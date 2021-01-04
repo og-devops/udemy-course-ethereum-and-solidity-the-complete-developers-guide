@@ -1,0 +1,9 @@
+cd C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\kickstart>
+cd C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\kickstart
+mkdir test
+touch test.txt
+copy test.txt
+echo test > test.txt
+cd ethereum
+node compile.js
+doskey /history > cmdhistory3.txt

@@ -1,0 +1,11 @@
+ipconfig
+cd "Desktop\Ethereum and Solidity - The Complete Developer's Guide\react"
+dir
+cd ReduxSimpleStarter
+npm install --save youtube-api-search
+cd ../..
+cd lottery.frontend
+cd lottery-react
+npm install --save web3@1.0.0-beta.35
+npm install --save web3@1.0.0-beta.26
+doskey /history > lottery.frontend.history2.txt

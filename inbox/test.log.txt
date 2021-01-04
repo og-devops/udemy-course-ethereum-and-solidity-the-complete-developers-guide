@@ -1,0 +1,8 @@
+
+> inbox@1.0.0 test C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\inbox
+> mocha
+
+
+> inbox@1.0.0 test C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\inbox
+> mocha
+

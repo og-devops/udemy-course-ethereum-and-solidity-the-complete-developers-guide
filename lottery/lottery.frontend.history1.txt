@@ -1,0 +1,3 @@
+cd "Desktop\Ethereum and Solidity - The Complete Developer's Guide\lottery"
+node deploy.js
+doskey /history > lottery.frontend.history1.txt

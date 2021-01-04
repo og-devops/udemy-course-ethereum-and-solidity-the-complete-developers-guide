@@ -1,0 +1,9 @@
+cd "c:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide"
+dir
+cd react
+dir
+cd ReduxSimpleStarter
+npm install
+npm start
+y
+doskey /history > cmd.history.txt

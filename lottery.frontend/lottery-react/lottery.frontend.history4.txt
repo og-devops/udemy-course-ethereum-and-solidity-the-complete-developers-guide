@@ -1,0 +1,35 @@
+cd "Desktop\Ethereum and Solidity - The Complete Developer's Guide"
+ls
+dir
+cd inbox
+dir
+npm deloy.js
+npm run deploy.js
+cls
+npm run test
+clear
+node compile.js
+node deploy.js
+cd ../lottery
+dir
+npm run test
+clear
+cls
+dir
+npm run test
+ssh root@192.168.0.1
+npm run test
+npm run test > test.log.txt
+npm run test
+npm run test > test.log.txt
+git 
+npm install -g create-react-app
+cd ..
+cd lottery.frontend
+npm install -g create-react-app
+create-react-app lottery-react
+npm run start
+cd lottery-react
+npm run start
+Y
+doskey /history > lottery.frontend.history4.txt

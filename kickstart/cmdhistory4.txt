@@ -1,0 +1,15 @@
+cd "Desktop\Ethereum and Solidity - The Complete Developer's Guide\kickstart"
+npm run test
+npm install --save @truffle/hdwallet-provider
+cd ethereum
+node deploy.js
+CD ..
+npm install --save next@4.1.4 react react-dom
+npm run dev
+npm remove react react-dom
+npm install --save react@16 react-dom@16
+npm run dev
+Y
+npm install --save semantic-ui-react
+npm install --save semantic-ui-css
+doskey /history > cmdhistory4.txt

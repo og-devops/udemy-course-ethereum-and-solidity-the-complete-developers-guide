@@ -1,0 +1,23 @@
+cd "c:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide"
+dir
+cd react
+dir
+cd ReduxSimpleStarter-master
+npm start
+init
+npm init
+npm start
+cd ..
+cd ReduxSimpleStarter
+npm start
+npm install
+npm start
+y
+doskey /history > cmd.history.txt
+npm start
+ y
+y
+cls
+npm start
+Y
+doskey /history > lottery.frontend.history3.txt

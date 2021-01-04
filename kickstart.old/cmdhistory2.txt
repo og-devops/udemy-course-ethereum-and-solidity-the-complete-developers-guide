@@ -1,0 +1,50 @@
+node compile.js
+cd ..
+npm uninstall solc
+npm install --save solc@0.4.17
+node compile.js
+cd ethereum
+node compile.js
+cd ..
+npm uninstall solc
+npm install solc@0.4.25
+cd ethereum
+node compile.js
+cd ..
+doskey /history
+npm uninstall solc
+npm uninstall solc@0.4.17
+npm uninstall solc@0.4.25
+npm install --save solc@0.4.25
+cd ethereum
+node compile.js
+cd.. 
+npm uninstall solc@0.4.25
+npm install --save solc@0.4.17
+cd ethereum
+node compile.js
+cd ..
+npm version solc
+npm install solc
+cd ethereum
+node compile.js
+npm uninstall solc
+npm uninstall solc@0.4.25
+doskey /history
+npm uninstall solc@0.4.17
+npm install --save solc@0.4.17
+node compile.js
+npm install --save solc@0.4.17
+npm install --global solc@0.4.17
+node compile.js
+npm install
+npm install --save web3
+node compile.js
+npm install --global --production windows-build-tools
+node compile.js
+cls
+npm install --save mocha ganache-cliweb3@1.0.0-beta.35
+cd ..
+npm install --save mocha ganache-cliweb3@1.0.0-beta.35
+doskey /history
+doskey /history > cmdhistory2.txt

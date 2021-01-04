@@ -1,0 +1,20 @@
+cd "Desktop\Ethereum and Solidity - The Complete Developer's Guide"
+cd inbox
+ls
+dir
+npm run test
+npm uninstall solc
+npm install --save solc@0.4.17
+npm run test
+npm init
+npm run test
+node complie.js
+node compile.js
+npm install --global --production windows-build-tools
+npm install --save mocha ganache-cli
+npm run test
+npm install --save mocha ganache-cliweb3@1.0.0-beta.35
+npm run test
+npm install --save web3
+npm run test
+doskey /history > cmdhistory.txt

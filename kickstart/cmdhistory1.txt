@@ -1,0 +1,13 @@
+cd C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\kickstart
+npm init
+npm install --save ganache-cli mocha solc fs-extra web3@1.0.0-beta.26
+cd ethereum
+node compile.js
+cd ..
+npm install --save solc@0.4.17
+cd ethereum
+doskey /history
+npm run deploy.js
+npm run compile.js
+node compile.js
+doskey /history > cmdhistory1.txt

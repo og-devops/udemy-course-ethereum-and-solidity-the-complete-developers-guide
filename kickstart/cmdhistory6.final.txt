@@ -1,0 +1,17 @@
+cd C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\kickstart
+npm run dev
+Y
+npm run dev
+Y
+npm install --save next-routes
+npm run dev
+Y
+doskey /history > cmdhistory6.txt
+npm run dev
+doskey /history > cmdhistory6.txt
+cd ethereum
+node compile.js
+node deploy.js
+cd ..
+npm run dev
+doskey /history > cmdhistory6.final.txt

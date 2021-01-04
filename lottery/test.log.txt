@@ -1,0 +1,166 @@
+
+> inbox@1.0.0 test C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\lottery
+> mocha
+
+
+
+  Lottery Contract
+    √ deploys a content
+    √ allows one account to enter (297ms)
+    √ allows multiple accounts to enter (786ms)
+    √ requires a minimum amount of ether to enter (137ms)
+    √ only manager can call pickWinner (158ms)
+{
+  call: [Function: bound _executeMethod] {
+    request: [Function: bound _executeMethod]
+  },
+  send: [Function: bound _executeMethod] {
+    request: [Function: bound _executeMethod]
+  },
+  encodeABI: [Function: bound _encodeMethodABI],
+  estimateGas: [Function: bound _executeMethod],
+  arguments: [],
+  _method: {
+    constant: true,
+    inputs: [],
+    name: 'getPlayers',
+    outputs: [ [Object] ],
+    payable: false,
+    stateMutability: 'view',
+    type: 'function',
+    signature: '0x8b5b9ccc'
+  },
+  _parent: Contract {
+    setProvider: [Function (anonymous)],
+    currentProvider: [Getter/Setter],
+    _requestManager: RequestManager {
+      provider: [l],
+      providers: [Object],
+      subscriptions: Map(0) {}
+    },
+    givenProvider: null,
+    providers: {
+      WebsocketProvider: [Function: WebsocketProvider],
+      HttpProvider: [Function: HttpProvider],
+      IpcProvider: [Function: IpcProvider]
+    },
+    _provider: l {
+      _events: [Object: null prototype],
+      _eventsCount: 5,
+      _maxListeners: 100,
+      options: [Object],
+      engine: [u],
+      manager: [p],
+      sendAsync: [Function: bound ],
+      send: [Function: bound ],
+      close: [Function: bound ],
+      _queueRequest: [Function: bound ],
+      _processRequestQueue: [Function: bound ],
+      _requestQueue: [],
+      _requestInProgress: false,
+      [Symbol(kCapture)]: false
+    },
+    setRequestManager: [Function (anonymous)],
+    BatchRequest: [Function: bound Batch],
+    extend: [Function: ex] {
+      formatters: [Object],
+      utils: [Object],
+      Method: [Function: Method]
+    },
+    clearSubscriptions: [Function (anonymous)],
+    options: {
+      address: [Getter/Setter],
+      jsonInterface: [Getter/Setter],
+      data: undefined,
+      from: undefined,
+      gasPrice: undefined,
+      gas: undefined
+    },
+    handleRevert: [Getter/Setter],
+    defaultCommon: [Getter/Setter],
+    defaultHardfork: [Getter/Setter],
+    defaultChain: [Getter/Setter],
+    transactionPollingTimeout: [Getter/Setter],
+    transactionConfirmationBlocks: [Getter/Setter],
+    transactionBlockTimeout: [Getter/Setter],
+    defaultAccount: [Getter/Setter],
+    defaultBlock: [Getter/Setter],
+    methods: {
+      manager: [Function: bound _createTxObject],
+      '0x481c6a75': [Function: bound _createTxObject],
+      'manager()': [Function: bound _createTxObject],
+      pickWinner: [Function: bound _createTxObject],
+      '0x5d495aea': [Function: bound _createTxObject],
+      'pickWinner()': [Function: bound _createTxObject],
+      getPlayers: [Function: bound _createTxObject],
+      '0x8b5b9ccc': [Function: bound _createTxObject],
+      'getPlayers()': [Function: bound _createTxObject],
+      enter: [Function: bound _createTxObject],
+      '0xe97dcb62': [Function: bound _createTxObject],
+      'enter()': [Function: bound _createTxObject],
+      players: [Function: bound _createTxObject],
+      '0xf71d96cb': [Function: bound _createTxObject],
+      'players(uint256)': [Function: bound _createTxObject]
+    },
+    events: { allEvents: [Function: bound ] },
+    _address: '0x4C278462B518CC75C8223E294ba7c09b648258b6',
+    _jsonInterface: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
+  },
+  _ethAccounts: <ref *1> Accounts {
+    currentProvider: [Getter/Setter],
+    _requestManager: RequestManager {
+      provider: [l],
+      providers: [Object],
+      subscriptions: Map(0) {}
+    },
+    givenProvider: null,
+    providers: {
+      WebsocketProvider: [Function: WebsocketProvider],
+      HttpProvider: [Function: HttpProvider],
+      IpcProvider: [Function: IpcProvider]
+    },
+    _provider: l {
+      _events: [Object: null prototype],
+      _eventsCount: 5,
+      _maxListeners: 100,
+      options: [Object],
+      engine: [u],
+      manager: [p],
+      sendAsync: [Function: bound ],
+      send: [Function: bound ],
+      close: [Function: bound ],
+      _queueRequest: [Function: bound ],
+      _processRequestQueue: [Function: bound ],
+      _requestQueue: [],
+      _requestInProgress: false,
+      [Symbol(kCapture)]: false
+    },
+    setProvider: [Function (anonymous)],
+    setRequestManager: [Function (anonymous)],
+    _ethereumCall: {
+      getNetworkId: [Function],
+      getChainId: [Function],
+      getGasPrice: [Function],
+      getTransactionCount: [Function]
+    },
+    wallet: Wallet {
+      _accounts: [Circular *1],
+      length: 0,
+      defaultKeyName: 'web3js_wallet'
+    }
+  }
+}
+    1) sends money to the winner and resets the players array
+
+
+  5 passing (4s)
+  1 failing
+
+  1) Lottery Contract
+       sends money to the winner and resets the players array:
+     TypeError: Assignment to constant variable.
+      at Context.<anonymous> (test\Lottery.test.js:106:23)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+
+

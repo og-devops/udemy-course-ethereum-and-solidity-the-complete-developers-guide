@@ -1,0 +1,14 @@
+
+> inbox@1.0.0 test C:\Users\forge\Desktop\Ethereum and Solidity - The Complete Developer's Guide\inbox
+> mocha
+
+
+
+  Inbox
+    √ deploys a content
+    √ has a default message (194ms)
+    √ can change the message (296ms)
+
+
+  3 passing (2s)
+
