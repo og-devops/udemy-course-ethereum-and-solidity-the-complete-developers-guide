@@ -1,4 +1,3 @@
-//pragma solidity ^0.6.5;
 pragma solidity ^0.4.17;
 
 contract CampaignFactory {
@@ -14,7 +13,6 @@ contract CampaignFactory {
     }
 }
 
-
 contract Campaign {
     struct Request {
         string description;
@@ -25,10 +23,10 @@ contract Campaign {
         mapping(address => bool) approvals;
     }
 
-    Request [] public requests;
+    Request[] public requests;
     address public manager;
     uint public minimumContribution;
-    mapping(address => bool) public approvers;//instead of array. address[] public approvers;
+    mapping(address => bool) public approvers;
     uint public approversCount;
 
     modifier restricted() {
@@ -45,39 +43,29 @@ contract Campaign {
         require(msg.value > minimumContribution);
 
         approvers[msg.sender] = true;
-        //approvers.push(msg.sender);
         approversCount++;
     }
 
     function createRequest(string description, uint value, address recipient) public restricted {
-        //require(approvers[msg.sender]) //example of checking if sender donated by seeing if value was set to true when they donated.
         Request memory newRequest = Request({
-            description: description,
-            value: value,
-            recipient: recipient,
-            complete: false,
-            approvalCount: 0
-        }); //Request(description, value, recipient, false); //provided only values not definitions. refers to line 3-9.
+           description: description,
+           value: value,
+           recipient: recipient,
+           complete: false,
+           approvalCount: 0
+        });
 
         requests.push(newRequest);
     }
 
-    function approveRequest(uint index) public restricted {
-        Request storage request = requests[index]; //local storage variable within this function
+    function approveRequest(uint index) public {
+        Request storage request = requests[index];
 
         require(approvers[msg.sender]);
         require(!request.approvals[msg.sender]);
 
         request.approvals[msg.sender] = true;
         request.approvalCount++;
-
-        /* requests[index] called individually
-        require(approvers[msg.sender]);
-        require(!requests[index].approvals[msg.sender]);
-
-        requests[index].approvals[msg.sender] = true;
-        requests[index].approvalCount++;
-        */
     }
 
     function finalizeRequest(uint index) public restricted {
@@ -103,7 +91,6 @@ contract Campaign {
     }
 
     function getRequestsCount() public view returns (uint) {
-      return requests.length;
+        return requests.length;
     }
-
 }
